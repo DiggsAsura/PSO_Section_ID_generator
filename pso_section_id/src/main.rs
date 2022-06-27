@@ -2,6 +2,12 @@ use std::io::stdin;
 
 fn main() {
 
+    // PRESENT THE OPTIONS
+    let section_ids = ["Virdia", "Greenill", "Skyly", "Bluefull", "Purplenum", "Pinkal", "Redria", "Oran", "Yellowboz", "Whithill"];
+    for id in section_ids.iter().enumerate() {
+        println!("{:?}", id);
+    }
+
     // TAKE CHARACTER NAME
     println!("Enter your desired name to calculate the Section ID: ");
     let mut char_name = String::new();
@@ -49,7 +55,7 @@ fn main() {
 
     // CALCULATE THE SECTION IDs
     // Array of Section ids
-    let section_ids = ["Virdia", "Greenill", "Skyly", "Bluefull", "Purplenum", "Pinkal", "Redria", "Oran", "Yellowboz", "Whithill"];
+//    let section_ids = ["Virdia", "Greenill", "Skyly", "Bluefull", "Purplenum", "Pinkal", "Redria", "Oran", "Yellowboz", "Whithill"];
     
     // Since the Section ID is based off the LAST digit in the number: 
     // Get last digit to determine the ID
