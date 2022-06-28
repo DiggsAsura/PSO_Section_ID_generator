@@ -1,3 +1,5 @@
+// TODO, make a logic, that will suggest the correct array with items. 
+
 use std::io::stdin;
 
 fn main() {
@@ -7,6 +9,27 @@ fn main() {
     for id in section_ids.iter().enumerate() {
         println!("{:?}", id);
     }
+
+    // WHICH ONE YOU AIMING FOR? (0-9)
+    println!("Which one are you going to make (0-9): ");
+    let mut choice = String::new();
+    stdin().read_line(&mut choice)
+        .ok()
+        .expect("Fail");
+
+    match choice.as_str().trim() {
+        "0" => println!("{}", section_ids[0]),
+        "1" => println!("{}", section_ids[1]),
+        "2" => println!("{}", section_ids[2]),
+        "3" => println!("{}", section_ids[3]),
+        "4" => println!("{}", section_ids[4]),
+        "5" => println!("{}", section_ids[5]),
+        "6" => println!("{}", section_ids[6]),
+        "7" => println!("{}", section_ids[7]),
+        "8" => println!("{}", section_ids[8]),
+        "9" => println!("{}", section_ids[9]),
+        _ => println!("Sorry, no match"),
+    };
 
     // TAKE CHARACTER NAME
     println!("Enter your desired name to calculate the Section ID: ");
