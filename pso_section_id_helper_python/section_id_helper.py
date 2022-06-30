@@ -53,6 +53,9 @@ for c in name:
 # LAST DIGIT IN THE TOTAL NUMBER
 last_dig = score % 10
 
+diff = last_dig - choice
+print(f'difference: {diff}')
+
 # WHAT YOU WANT TO BE
 msg1 = "You want to become"
 match choice.strip():
@@ -105,5 +108,7 @@ match last_dig:
 
 
 # WHAT YOU NEED TO ADD:
+
+
 
 
